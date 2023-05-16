@@ -40,6 +40,8 @@ public class UserController {
 		targetUser.setLastName(user.getLastName());
 		targetUser.setEmail(user.getEmail());
 		targetUser.setPassword(user.getPassword());
+		targetUser.setGender(user.getGender());
+		targetUser.setCountry(user.getCountry());
 		userRepo.save(targetUser);
 		return "user has updated successfully!";
 	}
