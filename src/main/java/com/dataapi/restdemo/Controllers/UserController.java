@@ -7,6 +7,7 @@ import com.dataapi.restdemo.Models.Users;
 import com.dataapi.restdemo.Ropository.UserRepo;
 
 
+
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping(value = "/users")   //->   http://localhost:8000/users/
@@ -42,6 +43,8 @@ public class UserController {
 		targetUser.setPassword(user.getPassword());
 		targetUser.setGender(user.getGender());
 		targetUser.setCountry(user.getCountry());
+		targetUser.setTrack_res(user.getTrack_res());
+		targetUser.setTest_id(user.getTest_id());
 		userRepo.save(targetUser);
 		return "user has updated successfully!";
 	}

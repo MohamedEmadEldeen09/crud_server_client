@@ -27,7 +27,25 @@ public class Users {
 	@Column
 	private String country;
 	
+	@Column
+	private String track_res;
 	
+	@Column
+	private String test_id;
+	
+	
+	public String getTrack_res() {
+		return track_res;
+	}
+	public void setTrack_res(String track_res) {
+		this.track_res = track_res;
+	}
+	public String getTest_id() {
+		return test_id;
+	}
+	public void setTest_id(String test_id) {
+		this.test_id = test_id;
+	}
 	public int getId() {
 		return id;
 	}
