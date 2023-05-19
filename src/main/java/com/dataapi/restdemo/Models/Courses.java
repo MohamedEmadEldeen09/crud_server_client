@@ -15,8 +15,6 @@ public class Courses {
 	@Column
 	private int course_hours;
 	
-	@Column
-	private String course_desc;
 	
 	@Column
 	private String platform;
@@ -55,15 +53,6 @@ public class Courses {
 		this.course_hours = course_hours;
 	}
 
-
-	public String getCourse_desc() {
-		return course_desc;
-	}
-
-
-	public void setCourse_desc(String course_desc) {
-		this.course_desc = course_desc;
-	}
 
 
 	public String getPlatform() {
